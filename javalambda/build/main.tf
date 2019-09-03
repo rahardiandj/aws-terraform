@@ -1,6 +1,6 @@
 provider "aws" {
-    access_key = "AKIAX4L3AGCJBWB3CKWH"
-    secret_key = "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"
+    access_key = "-"
+    secret_key = "-"
     region = "ap-southeast-1" 
 }
 
@@ -33,5 +33,4 @@ resource "aws_lambda_function" "javalambda" {
     handler = "com.lambda.scheduler.LambdaMethodHandler::handleRequest"
     runtime = "java8"
     timeout = "60"
-
 }
